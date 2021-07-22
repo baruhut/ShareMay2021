@@ -2,11 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" name="Web Test Suite" parallel="methods">
 <<<<<<< HEAD
-  <test thread-count="2" name="Web Test - change from remote 22/07/2021 - from Local Oshin dan Aimy" parallel="methods">
+<<<<<<< HEAD
+  <test thread-count="2" name="Web Test - change from remote 22/07/2021 - from Local Aimy" parallel="methods">
 =======
-  <test thread-count="2" name="Web Test - change from remote 22/07/2021 - from Local Oshin - modified 14.36" parallel="methods">
 >>>>>>> e4cab40d3fc76b7007440e085594f28f3344c877
     <classes>
+=======
+  <test thread-count="2" name="Web Test - change from remote 22/07/2021 from local edo" parallel="methods">
+>>>>>>> cba735b6167532a182c2754dc74bcc4fbc8befa8
       <class name="com.jakartalabs.ShareMay2021.InflectraAppTest"/>
     </classes>
   </test> <!-- Test -->
