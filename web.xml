@@ -2,7 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" name="Web Test Suite" parallel="methods">
   <test thread-count="2" name="Web Test - change from remote 22/07/2021 from local edo" parallel="methods">
-    <classes>
       <class name="com.jakartalabs.ShareMay2021.InflectraAppTest"/>
     </classes>
   </test> <!-- Test -->
