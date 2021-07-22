@@ -1,0 +1,6 @@
+com\jakartalabs\ShareMay2021\BaseAPITest.class
+com\jakartalabs\ShareMay2021\APITests.class
+com\jakartalabs\ShareMay2021\InflectraIWebDriver.class
+com\jakartalabs\ShareMay2021\InflectraAppTest.class
+com\jakartalabs\ShareMay2021\InflectraBasePage.class
+com\jakartalabs\ShareMay2021\InflectraBaseWebTest.class

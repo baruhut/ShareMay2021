@@ -1,0 +1,13 @@
+com\jakartalabs\ShareMay2021\pages\InflectraCompanyProfilePage.class
+com\jakartalabs\ShareMay2021\APIEndpoints.class
+com\jakartalabs\ShareMay2021\pages\InflectraBasePage.class
+com\jakartalabs\ShareMay2021\pages\InflectraLoginPage.class
+com\jakartalabs\ShareMay2021\utils\DataUtils.class
+com\jakartalabs\ShareMay2021\pages\InflectraCommonWebPage.class
+com\jakartalabs\ShareMay2021\pages\InflectraHomePage.class
+com\jakartalabs\ShareMay2021\utils\TestUtils.class
+com\jakartalabs\ShareMay2021\pages\InflectraAboutPage.class
+com\jakartalabs\ShareMay2021\JsonPaths.class
+com\jakartalabs\ShareMay2021\AppEnums$MenuNames.class
+com\jakartalabs\ShareMay2021\AppEnums.class
+com\jakartalabs\ShareMay2021\pages\InflectraProfilePage.class
