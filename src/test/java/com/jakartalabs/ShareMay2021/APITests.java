@@ -21,11 +21,12 @@ public class APITests extends BaseAPITest {
 		LinkedTreeMap<String, Object> loginMap = TestUtils
 				.convertJsonToMap(DataUtils.getDataFromExcel("Payload", "LoginAPI"));
 
-		loginMap.put("email", "chandan@gmail.com");
-		loginMap.put("password", "chandan");
+		loginMap.put("email", faker.name().username() + "@gmail.com");
 
 		Response response = given().spec(commonSpec).body(loginMap).when().post(APIEndpoints.loginAPI);
+
 		verifyAPIStatusTimeAndHeader(response, 422);
+
 	}
 
 	@Test(priority = 2)

@@ -9,7 +9,8 @@ import com.codoid.products.fillo.Recordset;
 
 public class DataUtils {
 
-	static String env = System.getProperty("env");
+//	static String env = System.getProperty("env");
+	static String env = null == System.getProperty("env") ? "stage" : System.getProperty("env");
 
 	static String dataFilePath = env.toLowerCase().equals("prod")
 			? System.getProperty("user.dir") + File.separator + "resources" + File.separator + "TestDataProd.xlsx"
