@@ -52,7 +52,7 @@ public class APITests2 extends BaseAPITest {
 		verifyAPIStatusTimeAndHeader(dashboardResponse, 200);
 
 		int cardCount = getDataFromResponseUsingJsonPath(dashboardResponse, JsonPaths.completedCardCount);
-		assertEquals(cardCount, 292);
+		assertEquals(cardCount, 294);
 
 	}
 

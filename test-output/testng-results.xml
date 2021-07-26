@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Web Test Suite" duration-ms="17874" started-at="2021-07-21T10:02:05Z" finished-at="2021-07-21T10:02:23Z">
+  <suite name="Default suite" duration-ms="13808" started-at="2021-07-26T07:38:05Z" finished-at="2021-07-26T07:38:18Z">
     <groups>
     </groups>
-    <test name="Web Test - remote" duration-ms="17874" started-at="2021-07-21T10:02:05Z" finished-at="2021-07-21T10:02:23Z">
-      <class name="com.jakartalabs.ShareMay2021.APITests">
-        <test-method status="PASS" signature="testLoginAPIWithInvalidCredentials()[pri:0, instance:com.jakartalabs.ShareMay2021.APITests@201b6b6f]" name="testLoginAPIWithInvalidCredentials" duration-ms="8930" started-at="2021-07-21T10:02:06Z" finished-at="2021-07-21T10:02:15Z">
+    <test name="Default test" duration-ms="13808" started-at="2021-07-26T07:38:05Z" finished-at="2021-07-26T07:38:18Z">
+      <class name="com.jakartalabs.ShareMay2021.APITests2">
+        <test-method status="PASS" signature="testLoginAPIWithInvalidCredentials()[pri:1, instance:com.jakartalabs.ShareMay2021.APITests2@24d4d7c9]" name="testLoginAPIWithInvalidCredentials" duration-ms="7593" started-at="2021-07-26T07:38:05Z" finished-at="2021-07-26T07:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginAPIWithInvalidCredentials -->
-        <test-method status="PASS" signature="testLoginAPI()[pri:1, instance:com.jakartalabs.ShareMay2021.APITests@201b6b6f]" name="testLoginAPI" duration-ms="6911" started-at="2021-07-21T10:02:15Z" finished-at="2021-07-21T10:02:21Z">
+        <test-method status="PASS" signature="testLoginAPI()[pri:2, instance:com.jakartalabs.ShareMay2021.APITests2@24d4d7c9]" name="testLoginAPI" duration-ms="4322" started-at="2021-07-26T07:38:12Z" finished-at="2021-07-26T07:38:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginAPI -->
-        <test-method status="PASS" signature="testDashboardAPI()[pri:2, instance:com.jakartalabs.ShareMay2021.APITests@201b6b6f]" name="testDashboardAPI" duration-ms="1904" started-at="2021-07-21T10:02:21Z" finished-at="2021-07-21T10:02:23Z">
+        <test-method status="PASS" signature="testDashboardAPI()[pri:3, instance:com.jakartalabs.ShareMay2021.APITests2@24d4d7c9]" name="testDashboardAPI" duration-ms="1776" started-at="2021-07-26T07:38:17Z" finished-at="2021-07-26T07:38:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardAPI -->
-      </class> <!-- com.jakartalabs.ShareMay2021.APITests -->
-    </test> <!-- Web Test - remote -->
-  </suite> <!-- Web Test Suite -->
+      </class> <!-- com.jakartalabs.ShareMay2021.APITests2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
