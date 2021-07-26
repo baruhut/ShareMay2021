@@ -4,7 +4,6 @@ import static org.testng.Assert.assertEquals;
 
 import java.util.concurrent.TimeUnit;
 
-import com.google.gson.internal.LinkedTreeMap;
 import com.jakartalabs.assignment.utils.DataUtils;
 
 import io.restassured.builder.RequestSpecBuilder;
@@ -30,6 +29,6 @@ public abstract class BaseAPITestAssignment {
 		return jpath.get(jsonPath);
 
 	}
-	
-	protected LinkedTreeMap<String, Object>
+
+//	protected LinkedTreeMap<String, Object>
 }
