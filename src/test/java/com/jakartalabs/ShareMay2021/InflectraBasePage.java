@@ -10,7 +10,7 @@ public class InflectraBasePage {
 	ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	ThreadLocal<WebDriverWait> explicitWait = new ThreadLocal<WebDriverWait>();
 
-	public InflectraBasePage(ThreadLocal<WebDriver> driver, ThreadLocal<WebDriverWait> explcitWait) {
+	public InflectraBasePage(ThreadLocal<WebDriver> driver, ThreadLocal<WebDriverWait> explicitWait) {
 		this.driver = driver;
 		this.explicitWait = explicitWait;
 	}

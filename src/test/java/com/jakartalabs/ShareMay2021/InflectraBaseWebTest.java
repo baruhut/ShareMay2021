@@ -30,7 +30,7 @@ public class InflectraBaseWebTest implements InflectraIWebDriver {
 //		WebDriverManager.chromedriver().setup();
 //		driver.set(new ChromeDriver());
 //		driver.get().manage().window().maximize();
-//		driver.get().get(DataUtils.getDataFromExcel("Config", "BaseUrl"));
+//		driver.get().get(DataUtilsAssignment.getDataFromExcel("Config", "BaseUrl"));
 //		explicitWait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(60)));
 
 		WebDriverManager.chromedriver().setup();

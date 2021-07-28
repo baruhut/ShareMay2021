@@ -19,13 +19,19 @@ public class APITests2 extends BaseAPITest {
 	public void testLoginAPIWithInvalidCredentials() {
 
 		LinkedTreeMap<String, Object> loginMap = TestUtils
-				.convertJsonToMap(DataUtils.getDataFromExcel("Payload", "LoginAPI"));
+				.convertJsonToMap(DataUtils.getDataFromExcel("Payload", "LoginAPI").replace("email", "mail"));
 
-		loginMap.put("email", "chandan@gmail.com");
-		loginMap.put("password", "chandan");
+//		loginMap.put("email", "chandan@gmail.com");
+//		loginMap.put("password", "chandan");
 
 		Response response = given().spec(commonSpec).body(loginMap).when().post(APIEndpoints.loginAPI);
+
+		System.out.println(response.getStatusCode());
 		verifyAPIStatusTimeAndHeader(response, 422);
+		String messagebody = getDataFromResponseUsingJsonPath(response, "errors.provider[0]");
+		assertEquals(messagebody, "can't be blank");
+		System.out.println(response.jsonPath().getString("message"));
+
 	}
 
 	@Test(priority = 2)

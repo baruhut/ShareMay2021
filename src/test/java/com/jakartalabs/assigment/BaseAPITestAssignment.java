@@ -4,7 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import java.util.concurrent.TimeUnit;
 
-import com.jakartalabs.assignment.utils.DataUtils;
+import com.github.javafaker.Faker;
+import com.jakartalabs.assignment.utils.DataUtilsAssignment;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.path.json.JsonPath;
@@ -13,9 +14,11 @@ import io.restassured.specification.RequestSpecification;
 
 public abstract class BaseAPITestAssignment {
 
+	Faker faker = new Faker();
+
 	protected RequestSpecification commonSpec = new RequestSpecBuilder()
-			.setBaseUri(DataUtils.getDataFromExcel("Config", "BaseAPIUrl")).setAccept("application/json").build().log()
-			.all();
+			.setBaseUri(DataUtilsAssignment.getDataFromExcel("Config", "BaseAPIUrl")).setAccept("application/json")
+			.build().log().all();
 
 	protected void verifyAPIStatusTimeAndHeader(Response response) {
 		assertEquals(response.getStatusCode(), 200);
@@ -30,5 +33,12 @@ public abstract class BaseAPITestAssignment {
 
 	}
 
-//	protected LinkedTreeMap<String, Object>
+	/*
+	 * protected LinkedTreeMap<String, Object> convertJsonToMap(String jsonString) {
+	 * 
+	 * Gson gson = new Gson(); LinkedTreeMap<String, Object> jsonMap = new
+	 * LinkedTreeMap<String, Object>();
+	 * 
+	 * jsonMap = gson.fromJson(jsonString, jsonMap.getClass()); return jsonMap; }
+	 */
 }
