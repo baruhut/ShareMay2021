@@ -29,6 +29,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>api.xml</suiteXmlFile>
+						<suiteXmlFile>apiAssignment.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemProperties>
 						<property>
