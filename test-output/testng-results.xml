@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13808" started-at="2021-07-26T07:38:05Z" finished-at="2021-07-26T07:38:18Z">
+  <suite name="Default suite" duration-ms="8721" started-at="2021-07-29T08:54:16Z" finished-at="2021-07-29T08:54:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13808" started-at="2021-07-26T07:38:05Z" finished-at="2021-07-26T07:38:18Z">
-      <class name="com.jakartalabs.ShareMay2021.APITests2">
-        <test-method status="PASS" signature="testLoginAPIWithInvalidCredentials()[pri:1, instance:com.jakartalabs.ShareMay2021.APITests2@24d4d7c9]" name="testLoginAPIWithInvalidCredentials" duration-ms="7593" started-at="2021-07-26T07:38:05Z" finished-at="2021-07-26T07:38:12Z">
+    <test name="Default test" duration-ms="8721" started-at="2021-07-29T08:54:16Z" finished-at="2021-07-29T08:54:25Z">
+      <class name="com.jakartalabs.assigment.APITestAssignment">
+        <test-method status="PASS" signature="testSignUpAPI()[pri:1, instance:com.jakartalabs.assigment.APITestAssignment@3e5fd2b1]" name="testSignUpAPI" duration-ms="5801" started-at="2021-07-29T08:54:16Z" finished-at="2021-07-29T08:54:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginAPIWithInvalidCredentials -->
-        <test-method status="PASS" signature="testLoginAPI()[pri:2, instance:com.jakartalabs.ShareMay2021.APITests2@24d4d7c9]" name="testLoginAPI" duration-ms="4322" started-at="2021-07-26T07:38:12Z" finished-at="2021-07-26T07:38:17Z">
+        </test-method> <!-- testSignUpAPI -->
+        <test-method status="PASS" signature="verifyProfileAPI()[pri:2, instance:com.jakartalabs.assigment.APITestAssignment@3e5fd2b1]" name="verifyProfileAPI" duration-ms="1524" started-at="2021-07-29T08:54:22Z" finished-at="2021-07-29T08:54:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginAPI -->
-        <test-method status="PASS" signature="testDashboardAPI()[pri:3, instance:com.jakartalabs.ShareMay2021.APITests2@24d4d7c9]" name="testDashboardAPI" duration-ms="1776" started-at="2021-07-26T07:38:17Z" finished-at="2021-07-26T07:38:18Z">
+        </test-method> <!-- verifyProfileAPI -->
+        <test-method status="PASS" signature="logoutAPI()[pri:3, instance:com.jakartalabs.assigment.APITestAssignment@3e5fd2b1]" name="logoutAPI" duration-ms="1359" started-at="2021-07-29T08:54:23Z" finished-at="2021-07-29T08:54:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDashboardAPI -->
-      </class> <!-- com.jakartalabs.ShareMay2021.APITests2 -->
+        </test-method> <!-- logoutAPI -->
+      </class> <!-- com.jakartalabs.assigment.APITestAssignment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

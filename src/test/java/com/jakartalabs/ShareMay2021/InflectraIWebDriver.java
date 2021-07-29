@@ -8,7 +8,7 @@ public interface InflectraIWebDriver {
 
 	String HTTP_PROXY = "yy15366:Yeye0521@proxy.dnroot.net:8000";
 
-	public void createwebDriver();
+	public void createWebDriver();
 
-	public void quitwebDriver(ITestResult itr);
+	public void quitWebDriver(ITestResult itr);
 }

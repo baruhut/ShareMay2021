@@ -18,7 +18,7 @@ public abstract class BaseAPITestAssignment {
 
 	protected RequestSpecification commonSpec = new RequestSpecBuilder()
 			.setBaseUri(DataUtilsAssignment.getDataFromExcel("Config", "BaseAPIUrl")).setAccept("application/json")
-			.build().log().all();
+			.setProxy("proxy.dnroot.net", 8000).build().log().all();
 
 	protected void verifyAPIStatusTimeAndHeader(Response response) {
 		assertEquals(response.getStatusCode(), 200);

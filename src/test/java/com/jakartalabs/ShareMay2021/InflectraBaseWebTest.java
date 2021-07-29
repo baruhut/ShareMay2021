@@ -25,26 +25,26 @@ public class InflectraBaseWebTest implements InflectraIWebDriver {
 
 	@Override
 	@BeforeMethod
-	public void createwebDriver() {
-//		WebDriverManager.chromedriver().proxy(HTTP_PROXY).setup();
-//		WebDriverManager.chromedriver().setup();
-//		driver.set(new ChromeDriver());
-//		driver.get().manage().window().maximize();
-//		driver.get().get(DataUtilsAssignment.getDataFromExcel("Config", "BaseUrl"));
-//		explicitWait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(60)));
-
+	public void createWebDriver() {
+		WebDriverManager.chromedriver().proxy(HTTP_PROXY).setup();
 		WebDriverManager.chromedriver().setup();
 		driver.set(new ChromeDriver());
 		driver.get().manage().window().maximize();
 		driver.get().get(DataUtils.getDataFromExcel("Config", "BaseUrl"));
 		explicitWait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(60)));
 
+		/*
+		 * WebDriverManager.chromedriver().setup(); driver.set(new ChromeDriver());
+		 * driver.get().manage().window().maximize();
+		 * driver.get().get(DataUtils.getDataFromExcel("Config", "BaseUrl"));
+		 * explicitWait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(60)));
+		 */
 	}
 
 	@Override
 	@AfterMethod
-	public void quitwebDriver(ITestResult itr) {
-		if (itr.getStatus() == ITestResult.FAILURE) {
+	public void quitWebDriver(ITestResult itr) {
+		if (itr.getStatus() == ITestResult.CREATED) {
 			takesScreenshot(itr);
 		}
 		driver.get().quit();
