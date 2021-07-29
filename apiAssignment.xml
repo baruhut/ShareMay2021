@@ -3,7 +3,7 @@
 <suite thread-count="2" name="multiple Test API" parallel="methods">
   <test thread-count="2" name="mutiple Test API" parallel="methods">
     <classes>
-      <class name="com.jakartalabs.assigment.APITestAssignment"/>
+      <class name="com.jakartalabs.assignment.APITestAssignment"/>
       <!-- class name="com.jakartalabs.ShareMay2021.APITests2"/ -->
     </classes>
   </test> <!-- testMultipleAPI -->
