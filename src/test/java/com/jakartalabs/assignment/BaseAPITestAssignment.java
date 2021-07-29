@@ -16,11 +16,13 @@ public abstract class BaseAPITestAssignment {
 
 	Faker faker = new Faker();
 
+// 	commonSpec with proxy
 // 	protected RequestSpecification commonSpec = new RequestSpecBuilder()
 // 			.setBaseUri(DataUtilsAssignment.getDataFromExcel("Config", "BaseAPIUrl")).setAccept("application/json")
 // 			.setProxy("proxy.dnroot.net", 8000).build().log().all();
 	
-		protected RequestSpecification commonSpec = new RequestSpecBuilder()
+// 	commonSpec with no proxy
+	protected RequestSpecification commonSpec = new RequestSpecBuilder()
 			.setBaseUri(DataUtilsAssignment.getDataFromExcel("Config", "BaseAPIUrl")).setAccept("application/json").build().log().all();
 
 	protected void verifyAPIStatusTimeAndHeader(Response response) {
