@@ -1,4 +1,4 @@
-package com.jakartalabs.assigment;
+package com.jakartalabs.assignment.tests;
 
 import static org.testng.Assert.assertEquals;
 
